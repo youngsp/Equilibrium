@@ -17,8 +17,9 @@
         <link type="text/css" rel="stylesheet" href="assets/css/calendar.css"/>
         <link type="text/css" rel="stylesheet" href="assets/chosen/chosen/chosen.css"/>
         <link type="text/css" rel="stylesheet" href="assets/css/css-customed.css"/>
+         <script type="text/javascript" src="assets/js/lib/bootstrap-inputmask.js"></script>
+         <link type="text/css" rel="stylesheet" href="css/equilibrium.css"/>
         <script type="text/javascript" src="assets/holder-master/holder.js"></script>
-          <script type="text/javascript" src="assets/pagedown-bootstrap/demo/browser/bootstrap/js/bootstrap-carousel.js"></script>
 
         <link rel="stylesheet" href="assets/css/theme.css">
 
@@ -133,7 +134,7 @@
                     </div>
                     </div>
 
-                    <div class="row-fluid">
+                    <div class="row-fluid acc-wizard">
                         <!-- .inner -->
 
                             <!--        aLERT      -->
@@ -145,78 +146,86 @@
                              <!--        aLERT      -->
 
 
-                               <div class="span12 inner">
-                                    <div class="span3"></div>
-                                   <div class="span6">
-                                   <div class="row-fluid">
-                                             <div class="span3"></div>
-                                              <div class="span6"><img src="assets/img/logo-large.png" border="0"></div>
-                                             <div class="span3"></div>
-                                       </div>
-                                      <!--        Crie conta      -->
-                                        <div class="row-fluid">
-                                             <div class="span4"></div>
-                                             <div class="span1"><h1 class="text-info"><i class="icon-user"></i> </h1></div>
-                                             <div class="span4"><h4>Crie sua Conta</br><small>Seja um associado!</small></h4></div>
-                                             <div class="span3"></div>
-                                       </div>
-                                       <!--        facebook     
-                                       <div class="row-fluid">
-                                             <div class="span2"></div>
-                                             <div class="span8"><button type="button" class="btn btn-large btn-block btn-metis-4">    <i class="icon-facebook-sign icon-large"></i>   Entre com o seu Facebook</button>
-                                             <div class="span2"></div>
-                                       </div>
+                               <div class="span12">
+                                    <div class="span1"></div>
+                                    <div class="span3 cad-steps">
+                                    <div class="span12 " style="background: url('assets/img/pattern/groovepaper.png') repeat #fff; border-radius:1px; padding: 10px; margin: 1px 0 5px 0; box-shadow: -2px -2px 10px #aaa;">
+                                    <h4>Dados Pessoais  </h4>
 
+                                    </div>
+                                  <div class="span12" style="background: url('assets/img/pattern/groovepaper.png') repeat #fff; border-radius:1px; padding: 10px; margin: 1px 0 5px 0; box-shadow: -2px -2px 10px #aaa;">
+                                    <h4>Contato </h4>
+
+                                    </div>
+
+                                    <div class="span12" style="background: url('assets/img/pattern/groovepaper.png') repeat #fff; border-radius:1px; padding: 10px; margin: 1px 0 5px 0; box-shadow: -2px -2px 10px #aaa;">
+                                    <h4>Habilidades  </h4>
+
+                                    </div>
+
+                                    <div class="span12" style="background: url('assets/img/pattern/groovepaper.png') repeat #fff; border-radius:1px; padding: 10px; margin: 1px 0 5px 0; box-shadow: -2px -2px 10px #aaa;">
+                                    <h4>Interesses </h4>
+
+                                    </div>
+
+
+
+                                          </div>
+                                    
+                                    
+                                    
+                                   <div class="span7" style="background: url('assets/img/pattern/groovepaper.png') repeat #444444;  box-shadow: -2px -2px 10px #aaa;">
+                                       <div class="box dark">
+                                       <header>
+                                            <div class="icons"><i class="icon-edit"></i></div>
+                                            <h5>DADOS PESSOAIS</h5>
+                                            <!-- .toolbar -->
+                                        </header>
+                                             </div>
                                        <div class="row-fluid">
-                                             <div class="span5"><hr></div>
-                                             <div class="span2" ><button type="button" class="btn span12 disabled btn-block btn-success">O U</button></div>
-                                             <div class="span5"><hr></div>
+                                             <div class="span2" id="campo_email"></div>
+                                             <div class="span8">
+                                             <input onblur="validarDados('email', document.getElementById('email').value);" id="cpf" name="cpf" type="text" placeholder="CPF" data-mask="999.999.999-99" style="min-height: 40px !important;font-size: 18px;" class="span9 input-tooltip" data-original-title="Nome Completo" data-placement="bottom" required=""></div>
+                                             <div class="span2" id="campo_email"></div>
                                        </div>
-                                        
                                        <div class="row-fluid">
-                                             <div class="span5"></div>
-                                             <div class="span2"></div>
-                                             <div class="span5"></div>
-                                       </div>-->
-                                        <div class="row-fluid">
-                                             <div class="span2"></div>
-                                             <div class="span3"><form action="cd.php" method="post" enctype="text/plain"><input onblur="validarDadosNome('nome', document.getElementById('nome').value);" id="nome" name="nome" type="text" placeholder="Nome" style="min-height: 40px !important;font-size: 18px;" class="validate[required] text-input span12 input-tooltip" data-original-title="Nome Completo" data-placement="bottom" required=""></div>
-                                             <div class="span5"><input onblur="validarDadosNome('sobrenome', document.getElementById('sobrenome').value);" id="sobrenome" name="sobrenome" type="text" placeholder="Sobrenome" style="min-height: 40px !important;font-size: 18px;" class="span12 input-tooltip" data-original-title="Nome Completo" data-placement="bottom" required=""></div>
-                                             <div class="span2" id="campo_nome"></div>
-                                       </div>
-                                       <div class="row-fluid">
-                                             <div class="span2"></div>
-                                             <div class="span8"><input onblur="validarDados('email', document.getElementById('email').value);" onkeyup="validarDados('email', document.getElementById('email').value);" id="email" name="nome" type="text" placeholder="E-mail" style="min-height: 40px !important;font-size: 18px;" class="span12 input-tooltip" data-original-title="Nome Completo" data-placement="bottom" required=""></div>
+                                             <div class="span2" id="campo_email"></div>
+                                             <div class="span8"><input onblur="validarDados('email', document.getElementById('email').value);" id="cpf" name="cpf" type="text" placeholder="RG" data-mask="999.999.999-99" style="min-height: 40px !important;font-size: 18px;" class="span9 input-tooltip" data-original-title="Nome Completo" data-placement="bottom" required=""></div>
                                              <div class="span2" id="campo_email"></div>
                                        </div>
                                        <div class="row-fluid">
                                              <div class="span2"></div>
-                                             <div class="span8"><input onblur="validarDados('senha', document.getElementById('senha').value);" onkeyup="validarDados('senha', document.getElementById('senha').value);" id="senha" name="nome" type="password" placeholder="Crie uma Senha" style="min-height: 40px !important;font-size: 18px;" class="span12 input-tooltip" data-original-title="Nome Completo" data-placement="bottom" required=""></div>
-                                             <div class="span2" id="campo_senha"></div>
+                                             <div class="span8">
+                                             
+                                             <div class="btn-group" data-toggle-name="is_private" data-toggle="buttons-radio" >
+                                              <button type="button" value="0" class="btn" style="min-height: 40px !important;font-size: 16px;" data-toggle="button">Masculino</button>
+                                              
+                                              <button type="button" value="1" class="btn" style="min-height: 40px !important;font-size: 16px;" data-toggle="button">Feminino</button>
+                                              </div>
+                                              <input type="hidden" name="is_private" value="0" /> </div>
+                                              
+                                              <div class="span2"></div>
+                                       </div>
+                                       
+                                       <div class="row-fluid">
+                                             <div class="span2" id="campo_email"></div>
+                                             <div class="span8"><input onblur="validarDados('email', document.getElementById('email').value);" id="cpf" name="cpf" type="text" placeholder="Estado Civil" data-mask="999.999.999-99" style="min-height: 40px !important;font-size: 18px;" class="span9 input-tooltip" data-original-title="Nome Completo" data-placement="bottom" required=""></div>
+                                             <div class="span2" id="campo_email"></div>
+                                       </div>
+                                       <div class="row-fluid">
+                                             <div class="span2" id="campo_email"></div>
+                                             <div class="span8"><input onblur="validarDados('email', document.getElementById('email').value);" id="cpf" name="cpf" type="text" placeholder="Data de Nascimento" data-mask="999.999.999-99" style="min-height: 40px !important;font-size: 18px;" class="span9 input-tooltip" data-original-title="Nome Completo" data-placement="bottom" required=""></div>
+                                             <div class="span2" id="campo_email"></div>
                                        </div>
                                        <div class="row-fluid">
                                              <div class="span2"></div>
-                                             <div class="span8"><button id="botao_confirma" type="submit" class="btn btn-large btn-block btn-success disabled"><i class="icon-ok-sign icon-large"></i> Criar Minha Conta</button></form></div>
-                                             <div class="span2"></div>
+                                             <div class="span3"><button id="botao_confirma" type="button" class="btn btn-large btn-block btn-danger"><i class="icon-eraser icon-large"></i> Limpar</button></div><div class="span3"><button id="botao_confirma" type="button" class="btn btn-block btn-large btn-success"><i class="icon-ok-sign icon-large"></i> Salvar</button></form></div>
+                                             <div class="span4"></div>
                                        </div>
-                                       <div class="row-fluid">
-                                             <div class="span2"></div>
-                                             <div class="span8"><p> Ao clicar em "Criar Minha Conta" você estara indicando que leu e se compromete com o <a href="">Regimento da AAl.</a></p></div>
-                                             <div class="span2"></div>
+                                       
                                        </div>
-                                       <div class="row-fluid">
-                                             <div class="span2"></div>
-                                             <div class="span8"><hr></div>
-                                             <div class="span2"></div>
-                                       </div>
-                                       <div class="row-fluid">
-                                             <div class="span2"></div>
-                                             <div class="span8"><p> Jah tem uma conta? <a href="">Login</a></p></div>
-                                             <div class="span2"></div>
-                                       </div>
+                                       <div class="span1"></div>
 
-
-                                   <div class="span3"></div>
 
 
                          </div>
@@ -249,7 +258,7 @@
              aria-hidden="true">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Ã—</button>
-                <h3 id="helpModalLabel"><i class="icon-external-link"></i> Help</h3>
+                <h4 id="helpModalLabel"><i class="icon-external-link"></i> Help</h4>
             </div>
             <div class="modal-body">
                 <p>
@@ -285,19 +294,9 @@
 
         <script src="assets/fullcalendar/fullcalendar/fullcalendar.min.js"></script>
         <script src="assets/js/lib/jquery.tablesorter.min.js"></script>
-        <script type="text/javascript" src="assets/chosen/chosen/chosen.jquery.min.js"></script>
-
 
 
         <script src="assets/js/main.js"></script>
-
-                            <script type="text/javascript">
-            $(function() {
-                dashboard();
-            });
-            
-
-        </script>
 
 
 

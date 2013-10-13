@@ -17,8 +17,13 @@
         <link type="text/css" rel="stylesheet" href="assets/css/calendar.css"/>
         <link type="text/css" rel="stylesheet" href="assets/chosen/chosen/chosen.css"/>
         <link type="text/css" rel="stylesheet" href="assets/css/css-customed.css"/>
+         <script type="text/javascript" src="assets/js/lib/bootstrap-inputmask.js"></script>
+                <link type="text/css" rel="stylesheet" href="css/equilibrium.css"/>
         <script type="text/javascript" src="assets/holder-master/holder.js"></script>
           <script type="text/javascript" src="assets/pagedown-bootstrap/demo/browser/bootstrap/js/bootstrap-carousel.js"></script>
+          <link href="assets/acc-wizard-master/release/acc-wizard.min.css" rel="stylesheet">
+          <script src="assets/acc-wizard-master/release/acc-wizard.min.js"></script>
+
 
         <link rel="stylesheet" href="assets/css/theme.css">
 
@@ -30,6 +35,10 @@
     
         <link type="text/css" rel="stylesheet" href="assets/Font-awesome/css/font-awesome-ie7.min.css"/>
         <![endif]-->
+        
+        
+        <script type="text/javascript" src="ajax/funcs.js"></script>
+        
     </head>
     <body>
         <!-- BEGIN WRAP -->
@@ -119,14 +128,17 @@
                  <div class="row-fluid">
                 <div class="span12">   </div>
                  <div class="span12 inner">
+					 <!--
                     <div class="alert alert-error">
                                 <button type="button" class="close" data-dismiss="alert">&times;</button>
                                 <strong>Warning!</strong> Best check yo self, you're not looking too good.
                             </div>
+                            
+                     -->
                     </div>
                     </div>
 
-                    <div class="row-fluid">
+                    <div class="row-fluid acc-wizard">
                         <!-- .inner -->
 
                             <!--        aLERT      -->
@@ -138,76 +150,94 @@
                              <!--        aLERT      -->
 
 
-                               <div class="span12 inner">
-                                    <div class="span3"></div>
-                                   <div class="span6">
-                                   <div class="row-fluid">
-                                             <div class="span3"></div>
-                                              <div class="span6"><img src="assets/img/logo-large.png" border="0"></div>
-                                             <div class="span3"></div>
-                                       </div>
-                                      <!--        Crie conta      -->
-                                        <div class="row-fluid">
-                                             <div class="span4"></div>
-                                             <div class="span1"><h1 class="text-info"><i class="icon-user"></i> </h1></div>
-                                             <div class="span4"><h4>Crie sua Conta</br><small>Seja um associado!</small></h4></div>
-                                             <div class="span3"></div>
-                                       </div>
-                                       <!--        facebook      -->
-                                       <div class="row-fluid">
-                                             <div class="span2"></div>
-                                             <div class="span8"><button type="button" class="btn btn-large btn-block btn-metis-4">    <i class="icon-facebook-sign icon-large"></i>   Entre com o seu Facebook</button>
-                                             <div class="span2"></div>
-                                       </div>
+                               <div class="span12">
+                                    <div class="span1"></div>
+                                    <div class="span3 cad-steps">
+                                    <div class="span12 " style="background: url('assets/img/pattern/groovepaper.png') repeat #fff; border-radius:1px; padding: 10px; margin: 1px 0 5px 0; box-shadow: -2px -2px 10px #aaa;">
+                                    <h4>Dados Pessoais <i class="icon-ok green pull-right"></i> </h4>
 
-                                       <div class="row-fluid">
-                                             <div class="span5"><hr></div>
-                                             <div class="span2" ><button type="button" class="btn span12 disabled btn-block btn-success">O U</button></div>
-                                             <div class="span5"><hr></div>
-                                       </div>
-                                       <div class="row-fluid">
-                                             <div class="span5"></div>
-                                             <div class="span2"></div>
-                                             <div class="span5"></div>
-                                       </div>
-                                       <div class="row-fluid">
-                                             <div class="span2"></div>
-                                             <div class="span3"><input id="nome" name="nome" type="text" placeholder="Nome"  style="min-height: 40px !important;font-size: 18px;" class="span12 input-tooltip" data-original-title="Nome Completo" data-placement="bottom" required=""></div><div class="span5"><input id="nome" name="nome" type="text" placeholder="Sobrenome"  style="min-height: 40px !important;font-size: 18px;" class="span12 input-tooltip" data-original-title="Nome Completo" data-placement="bottom" required=""></div>
-                                             <div class="span2"><h4 style="color: green;"><i class="icon-ok active icon-large"></i></h4></div>
-                                       </div>
-                                       <div class="row-fluid">
-                                             <div class="span2"></div>
-                                             <div class="span8"><input id="nome" name="nome" type="text" placeholder="E-mail" style="min-height: 40px !important;font-size: 18px;" class="span12 input-tooltip" data-original-title="Nome Completo" data-placement="bottom" required=""></div>
-                                             <div class="span2"><h4 style="color: green;"><i class="icon-ok icon-large"></i></h4></div>
-                                       </div>
-                                       <div class="row-fluid">
-                                             <div class="span2"></div>
-                                             <div class="span8"><input id="nome" name="nome" type="password" placeholder="Crie uma Senha"  style="min-height: 40px !important;font-size: 18px;" class="span12 input-tooltip" data-original-title="Nome Completo" data-placement="bottom" required=""></div>
-                                             <div class="span2"><h4 style="color: green;"><i class="icon-ok icon-large"></i></h4></div>
-                                       </div>
-                                       <div class="row-fluid">
-                                             <div class="span2"></div>
-                                             <div class="span8"><button type="button" class="btn btn-large btn-block btn-success"><i class="icon-ok-sign icon-large"></i> Criar Minha Conta</button></div>
-                                             <div class="span2"></div>
-                                       </div>
-                                       <div class="row-fluid">
-                                             <div class="span2"></div>
-                                             <div class="span8"><p> Ao clicar em "Criar Minha Conta" você estara indicando que leu e se compromete com o <a href="">Regimento da AAl.</a></p></div>
-                                             <div class="span2"></div>
-                                       </div>
-                                       <div class="row-fluid">
-                                             <div class="span2"></div>
-                                             <div class="span8"><hr></div>
-                                             <div class="span2"></div>
-                                       </div>
-                                       <div class="row-fluid">
-                                             <div class="span2"></div>
-                                             <div class="span8"><p> Jah tem uma conta? <a href="">Login</a></p></div>
-                                             <div class="span2"></div>
-                                       </div>
+                                    </div>
+                                  <div class="span12" style="background: url('assets/img/pattern/groovepaper.png') repeat #fff; border-radius:1px; padding: 10px; margin: 1px 0 5px 0; box-shadow: -2px -2px 10px #aaa;">
+                                    <h4>Contato </h4>
+
+                                    </div>
+
+                                    <div class="span12" style="background: url('assets/img/pattern/groovepaper.png') repeat #fff; border-radius:1px; padding: 10px; margin: 1px 0 5px 0; box-shadow: -2px -2px 10px #aaa;">
+                                    <h4>Habilidades </h4>
+
+                                    </div>
+
+                                    <div class="span12" style="background: url('assets/img/pattern/groovepaper.png') repeat #fff; border-radius:1px; padding: 10px; margin: 1px 0 5px 0; box-shadow: -2px -2px 10px #aaa;">
+                                    <h4>Interesses  </h4>
+
+                                    </div>
 
 
-                                   <div class="span3"></div>
+
+                                          </div>
+                                    
+                                    
+                                    
+                                   <div class="span7" style="background: url('assets/img/pattern/groovepaper.png') repeat #444444;  box-shadow: -2px -2px 10px #aaa;">
+                                       <div class="box dark">
+                                       <header>
+                                            <div class="icons"><i class="icon-edit"></i></div>
+                                            <h5>CONTATO</h5>
+                                            <!-- .toolbar -->
+                                        </header>
+                                             </div>
+                                        <div class="span11 offset1">
+
+                                       <form>
+
+          <input id="geocomplete" class="span9" style="min-height: 40px !important;font-size: 16px;"  type="text" placeholder="Nome da sua rua, número" value="" />
+          <input id="find" class="btn span2 btn-success" style="min-height: 40px !important;font-size: 16px;"  type="button" value="Procurar" />
+
+
+          <fieldset>
+
+
+            <input name="formatted_address" type="hidden" value="Endereço Completo-hidden">
+
+            <label>Corrija eventuais erros abaixo...</label>
+            <input class="span7" name="route" type="text" value="" placeholder="Nome da Rua">
+            <input class="span2" name="street_number" type="text" placeholder="num" value="">
+            <input class="span4" name="postal_code" type="text" placeholder="código postal" value="">
+            <input class="span5" name="locality" type="text" placeholder="cidade" value="">
+            <input class="span5" name="sublocality" type="text" placeholder="bairro" value="">
+            <input class="span4" name="country" placeholder="país" type="text" value="">
+            <div class="input-prepend">
+            <span class="add-on"><i class="icon-phone icon-blue"></i></span>
+            <input class="span10" name="phone" placeholder="(xx)xxxx-xxxx FIXO" type="text" value="">
+            </div>
+            <div class="input-prepend">
+            <span class="add-on"><i class="icon-mobile-phone"></i></span>
+            <input class="span10" name="cellphone" placeholder="(xx)xxxx-xxxx CELULAR" type="text" value="">
+            </div>
+            
+            <input name="country_short" type="hidden" value="Country Code-hidden">
+
+          </fieldset>
+          <div class="span4">
+          <button id="botao_confirma" type="button" class="btn btn-medium span8 btn-block btn-danger"><i class="icon-eraser icon-large"></i> Limpar</button>
+          </div>
+          <div class="span4">
+          <button id="botao_confirma" type="button" class="btn btn-medium span8 btn-block btn-success"><i class="icon-ok-sign icon-large"></i> Salvar</button>
+          </div>
+        </form>
+                                        </div>
+
+
+
+
+
+                                       
+                                       
+                                       <!---- content -->
+                                       
+                                       </div>
+                                       <div class="span1"></div>
+
 
 
                          </div>
@@ -240,7 +270,7 @@
              aria-hidden="true">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Ã—</button>
-                <h3 id="helpModalLabel"><i class="icon-external-link"></i> Help</h3>
+                <h4 id="helpModalLabel"><i class="icon-external-link"></i> Help</h4>
             </div>
             <div class="modal-body">
                 <p>
@@ -276,19 +306,51 @@
 
         <script src="assets/fullcalendar/fullcalendar/fullcalendar.min.js"></script>
         <script src="assets/js/lib/jquery.tablesorter.min.js"></script>
-        <script type="text/javascript" src="assets/chosen/chosen/chosen.jquery.min.js"></script>
+
 
 
 
         <script src="assets/js/main.js"></script>
 
-                            <script type="text/javascript">
-            $(function() {
-                dashboard();
-            });
-            
 
-        </script>
+
+        <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+
+    <script src="js/jquery.geocomplete.min.js"></script>
+    <script src="js/logger.js"></script>
+
+    <script>
+      $(function(){
+        $("#geocomplete").geocomplete({
+          details: "form",
+          types: ["geocode", "establishment"]
+        });
+
+        $("#find").click(function(){
+          $("#geocomplete").trigger("geocode");
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-57649-7");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+
+
+
+
+
+
+
+
+
 
 
 
